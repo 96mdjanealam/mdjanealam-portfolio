@@ -1,25 +1,48 @@
 import { ImMenu } from "react-icons/im";
 import { FaDownload } from "react-icons/fa";
 import resume from "../assets/Md Jane Alam resume.pdf";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const links = (
     <>
-      <li>
-        <a>About Me</a>
-      </li>
-      <li>
-        <a>Skills</a>
-      </li>
-      <li>
-        <a>Education & Credentials</a>
-      </li>
-      <li>
-        <a>Projects</a>
-      </li>
-      <li>
-        <a>Contact</a>
-      </li>
+      {location.pathname.includes("project-detail") ? (
+        <>
+          <li>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
+          </li>
+        </>
+      ) : (
+        <>
+          <li>
+            <a onClick={() => scrollToSection("about-me")}>About Me</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection("skills")}>Skills</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection("education")}>
+              Education & Credentials
+            </a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection("projects")}>Projects</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection("contact")}>Contact</a>
+          </li>
+        </>
+      )}
     </>
   );
 
@@ -42,12 +65,16 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link to="/">
+            <p className="btn btn-ghost text-xl">
+              Port<span className="text-success -ml-1">folio</span>
+            </p>
+          </Link>
         </div>
+        <div className="navbar-end">
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
           <a
             href={resume}
             download="Md_Jane_Alam_Resume.pdf"

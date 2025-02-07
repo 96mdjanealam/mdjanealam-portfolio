@@ -11,7 +11,7 @@ const Contact = () => {
         <SectionTitle title={"Contact"} />
         
         <p className="mt-6 mb-2 text-center font-semibold">Slide Into My Inbox – The Safe Way! 📥😄</p>
-        <p className="text-center text-sm">Pick any of the options</p>
+        <p className="text-center text-sm opacity-50">Pick any of the options</p>
         <hr className='w-full my-4 opacity-50' />
         <div className='w-full flex flex-col gap-2 md:flex-row md:gap-10 md:justify-center '>
        <a href="mailto:96mdjanealam@gmail.com" className="hover:text-success flex items-center gap-2"><FiMail /> Email: 96mdjanealam@gmail.com</a>

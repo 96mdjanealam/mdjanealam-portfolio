@@ -18,7 +18,7 @@ const Projects = () => {
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
       {projects.map(project => (
         <div key={project.id} className="card bg-base-100 shadow-sm border-2 border-success hover:scale-104 transition duration-300 ease-in-out">
-        <figure className="px-5 pt-5 h-40 lg:h-60">
+        <figure className="px-5 pt-5 h-60">
           <img
             src={project.projectImage}
             alt=""
@@ -37,7 +37,6 @@ const Projects = () => {
       </div>
       ))}
     </div>
-
       </div>
     </div>
   );
