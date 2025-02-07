@@ -1,6 +1,7 @@
 import React from "react";
 import projectsData from "../assets/ProjectsData.json";
 import SectionTitle from "./SectionTitle";
+import { Link } from "react-router-dom";
 
 const projects = projectsData?.projects;
 
@@ -8,9 +9,9 @@ const Projects = () => {
   return (
     <div className="bg-base-200 py-10 md:py-20">
       <div className="w-[90%] md:w-[80%] mx-auto flex flex-col items-center">
-        <SectionTitle title={"Skills"} />
+        <SectionTitle title={"Projects"} />
         <div>
-          <p className="my-6 text-center font-semibold">Techs I work with</p>
+          <p className="my-6 text-center font-semibold">Some of my projects</p>
         </div>
 {/* projects */}
 
@@ -27,7 +28,10 @@ const Projects = () => {
           <h2 className="card-title">{project.projectName}</h2>
           <p>{project.briefDescription}</p>
           <div className="card-actions mt-2">
+            <Link to={`/project-detail/${project.id}`}>
             <button className="btn btn-success">View More</button>
+            </Link>
+            
           </div>
         </div>
       </div>

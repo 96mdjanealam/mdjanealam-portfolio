@@ -1,107 +1,112 @@
 {
-    "projects": [
-      {
-        "id": 1,
-        "projectName": "HopePulse",
-        "projectImage": "/images/project-a12.png",
-        "frontendTechnologies": [
-          "React",
-          "React Router",
-          "Tailwind CSS",
-          "DaisyUI",
-          "React Icons",
-          "SweetAlert2",
-          "React Hook Form",
-          "Date-fns",
-          "Jodit-React"
-        ],
-        "backendTechnologies": [
-          "Firebase",
-          "Axios"
-        ],
-        "briefDescription": "HopePulse is a platform that connects blood donors and recipients, offering a seamless experience for registration, requests, and management, with secure user authentication and real-time alerts.",
-        "liveProjectLink": "HopePulse",
-        "githubRepositoryLink": "https://github.com/96mdjanealam/hopePulse-client-a12",
-        "challengesFaced": [
-          "Integrating Firebase authentication and real-time database functionalities.",
-          "Setting up Stripe payment gateway for donation management.",
-          "Ensuring secure image hosting and user data encryption.",
-          "Building an efficient donor search functionality."
-        ],
-        "potentialImprovements": [
-          "Integrate more payment gateways for easy donations.",
-          "Introduce a feature for live updates on blood availability.",
-          "Add more user-friendly features for faster donor-recipient matching.",
-          "Enhance admin functionalities with detailed analytics."
-        ]
-      },
-      {
-        "id": 2,
-        "projectName": "Study Buddy",
-        "projectImage": "/images/project-a11.png",
-        "frontendTechnologies": [
-          "React",
-          "React Router DOM",
-          "Tailwind CSS",
-          "DaisyUI",
-          "React Toastify",
-          "SweetAlert2",
-          "React Hook Form"
-        ],
-        "backendTechnologies": [
-          "Firebase"
-        ],
-        "briefDescription": "Study Buddy is a web app for teachers and students to create, track, and grade assignments with ease, offering collaboration tools and distinct dashboards for each user role.",
-        "liveProjectLink": "Study Buddy",
-        "githubRepositoryLink": "https://github.com/96mdjanealam/studybuddy-client-a11",
-        "challengesFaced": [
-          "Ensuring smooth real-time updates for assignment submission tracking.",
-          "Building automated grading functionality.",
-          "Managing different user roles and ensuring secure access.",
-          "Handling multiple assignment submissions with Firebase."
-        ],
-        "potentialImprovements": [
-          "Introduce more advanced grading criteria and analytics.",
-          "Add real-time notifications for students and teachers.",
-          "Enable support for file uploads in assignments.",
-          "Create a feature for peer evaluations."
-        ]
-      },
-      {
-        "id": 3,
-        "projectName": "Raise Together",
-        "projectImage": "/images/project-a10.png",
-        "frontendTechnologies": [
-          "React",
-          "React Router DOM",
-          "Tailwind CSS",
-          "DaisyUI",
-          "Material Tailwind",
-          "Emotion (CSS-in-JS)",
-          "React Awesome Reveal",
-          "React Simple Typewriter",
-          "React Toastify",
-          "React Tooltip"
-        ],
-        "backendTechnologies": [
-          "Firebase"
-        ],
-        "briefDescription": "Raise Together is a crowdfunding platform that connects creators with supporters, offering real-time updates and engaging campaign pages for a smooth fundraising experience.",
-        "liveProjectLink": "Raise Together",
-        "githubRepositoryLink": "https://github.com/96mdjanealam/raise-together-client-a10",
-        "challengesFaced": [
-          "Real-time updates on campaign progress and donor contributions.",
-          "Managing dynamic campaign creation and deletion.",
-          "Ensuring secure Firebase authentication and data handling.",
-          "Creating visually appealing and engaging campaign pages."
-        ],
-        "potentialImprovements": [
-          "Introduce advanced campaign analytics and reporting.",
-          "Add social media sharing options to boost campaign visibility.",
-          "Integrate more payment gateways for diverse donor options.",
-          "Enhance accessibility features for users with disabilities."
-        ]
-      }
-    ]
-  }
-  
+  "projects": [
+    {
+      "id": 1,
+      "projectName": "HopePulse",
+      "projectImage": "/images/project-a12.png",
+      "frontendTechnologies": [
+        "React",
+        "React Router",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Icons",
+        "SweetAlert2",
+        "React Hook Form",
+        "Date-fns",
+        "Jodit-React"
+      ],
+      "backendTechnologies": [
+        "Firebase",
+        "Axios",
+        "MongoDB",
+        "Node.js",
+        "Express.js",
+        "Tanstack Query",
+        "JWT Token"
+      ],
+      "briefDescription": "HopePulse is a platform that connects blood donors and recipients, offering a seamless experience for registration, requests, and management, with secure user authentication and real-time alerts.",
+      "liveProjectLink": "https://hopepulse-90981.web.app/",
+      "githubRepositoryLink": "https://github.com/96mdjanealam/hopePulse-client-a12",
+      "challengesFaced": [
+        "Integrating Firebase authentication and real-time database functionalities.",
+        "Setting up Stripe payment gateway for donation management.",
+        "Ensuring secure image hosting and user data encryption.",
+        "Building an efficient donor search functionality."
+      ],
+      "potentialImprovements": [
+        "Integrate more payment gateways for easy donations.",
+        "Introduce a feature for live updates on blood availability.",
+        "Add more user-friendly features for faster donor-recipient matching.",
+        "Enhance admin functionalities with detailed analytics."
+      ]
+    },
+    {
+      "id": 2,
+      "projectName": "Study Buddy",
+      "projectImage": "/images/project-a11.png",
+      "frontendTechnologies": [
+        "React",
+        "React Router DOM",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Toastify",
+        "SweetAlert2",
+        "React Hook Form"
+      ],
+      "backendTechnologies": [
+        "Firebase",
+        "MongoDB",
+        "Node.js",
+        "Express.js",
+        "JWT Token"
+      ],
+      "briefDescription": "Study Buddy is a web app for teachers and students to create, track, and grade assignments with ease, offering collaboration tools and distinct dashboards for each user role.",
+      "liveProjectLink": "https://study-buddy-71834.web.app/",
+      "githubRepositoryLink": "https://github.com/96mdjanealam/studybuddy-client-a11",
+      "challengesFaced": [
+        "Ensuring smooth real-time updates for assignment submission tracking.",
+        "Building automated grading functionality.",
+        "Managing different user roles and ensuring secure access.",
+        "Handling multiple assignment submissions with Firebase."
+      ],
+      "potentialImprovements": [
+        "Introduce more advanced grading criteria and analytics.",
+        "Add real-time notifications for students and teachers.",
+        "Enable support for file uploads in assignments.",
+        "Create a feature for peer evaluations."
+      ]
+    },
+    {
+      "id": 3,
+      "projectName": "Raise Together",
+      "projectImage": "/images/project-a10.png",
+      "frontendTechnologies": [
+        "React",
+        "React Router DOM",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Material Tailwind",
+        "React Awesome Reveal",
+        "React Simple Typewriter",
+        "React Toastify",
+        "React Tooltip"
+      ],
+      "backendTechnologies": ["Firebase", "MongoDB", "Node.js", "Express.js"],
+      "briefDescription": "Raise Together is a crowdfunding platform that connects creators with supporters, offering real-time updates and engaging campaign pages for a smooth fundraising experience.",
+      "liveProjectLink": "https://raise-together-e9184.web.app/",
+      "githubRepositoryLink": "https://github.com/96mdjanealam/raise-together-client-a10",
+      "challengesFaced": [
+        "Real-time updates on campaign progress and donor contributions.",
+        "Managing dynamic campaign creation and deletion.",
+        "Ensuring secure Firebase authentication and data handling.",
+        "Creating visually appealing and engaging campaign pages."
+      ],
+      "potentialImprovements": [
+        "Introduce advanced campaign analytics and reporting.",
+        "Add social media sharing options to boost campaign visibility.",
+        "Integrate more payment gateways for diverse donor options.",
+        "Enhance accessibility features for users with disabilities."
+      ]
+    }
+  ]
+}
