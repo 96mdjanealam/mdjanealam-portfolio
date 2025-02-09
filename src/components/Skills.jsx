@@ -46,12 +46,37 @@ const skillsData = [
 ];
 
 const Skills = () => {
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible:{
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.3 },
+    }
+  };
+  
   return (
     <div className="bg-base-200 py-10 md:py-20">
       <div className="w-[90%] md:w-[80%] mx-auto flex flex-col items-center">
-        <SectionTitle title={"Skills"} />
+      <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={textVariants}
+         
+        >
+          <SectionTitle title={"Skills"} />
+        </motion.div>
         <div>
-          <p className="my-6 text-center font-semibold">Techs I work with</p>
+          <motion.p className="my-6 text-center font-semibold"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={textVariants}
+          >
+          Techs I work with
+          </motion.p>
           <div className="flex gap-6 flex-wrap items-center justify-center">
             {skillsData.map((skill, index) => (
               <motion.div
